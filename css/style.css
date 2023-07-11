@@ -46,7 +46,9 @@ body {
   border: 1px solid rgb(236, 230, 230) !important;
   overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
 }
-.contenedor-partes-1 img {
+.contenedor-partes-1 h1 {
+    color: white;
+    font-weight: bold;
   overflow: hidden;
 }
 .contenedor-partes-2 {
