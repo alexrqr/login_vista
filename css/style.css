@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../img/body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.contenedor-total {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+}
+.contendor-total-1 {
+  width: 70%;
+  height: 80vh;
+  max-width: 70%;
+  max-height: 80vh;
+  /* background-color: black; */
+  overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+}
+.contendor-total-2 {
+  display: flex;
+  overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+}
+.contenedor-partes-1 {
+  width: 50%;
+  height: 80vh;
+  max-width: 50%;
+  max-height: 80vh;
+  /* background-color: rgb(25, 106, 172); */
+  display: grid;
+  place-items: center;
+  /*EFECTO BLUR*/
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(25px);
+  border: 1px solid rgb(236, 230, 230) !important;
+  overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+}
+.contenedor-partes-1 img {
+  overflow: hidden;
+}
+.contenedor-partes-2 {
+  width: 50%;
+  height: 80vh;
+  max-width: 50%;
+  max-height: 80vh;
+  background-color: rgb(236, 230, 230);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+}
+.contenedor-partes-2 form .inpuut {
+  padding-bottom: 30px;
+}
+.contenedor-partes-2 form .log {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(158, 55, 55);
+}
+
+.contenedor-partes-2 form .inpuut label {
+  font-size: 23px;
+  font-weight: bold;
+}
+.contenedor-partes-2 form .inpuut i {
+  font-size: 25px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgb(158, 55, 55);
+  color: rgb(158, 55, 55);
+  font-weight: bold;
+  padding-top: 10px;
+}
+.contenedor-partes-2 form .inpuut input[type="text"],
+input[type="password"] {
+  font-size: 23px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-top: 10px;
+  padding-left: 8px;
+}
+.contenedor-partes-2 form .texts {
+  padding-bottom: 20px;
+}
+.contenedor-partes-2 form .btn {
+  padding-top: 30px;
+  display: grid;
+  place-items: center;
+}
+.contenedor-partes-2 form .btn button {
+  padding: 18px 50px;
+  background-color: rgb(158, 55, 55);
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+}
+.contenedor-partes-2 form .btn button:hover {
+  background-color: rgb(61, 52, 52);
+  color: white;
+  cursor: pointer;
+}
+@media screen and (min-width: 900px) and (max-width: 1050px) {
+  .contenedor-partes-2 {
+    display: grid;
+    place-items: center;
+  }
+  .contenedor-partes-2 form .inpuut {
+    padding-bottom: 30px;
+  }
+  .contenedor-partes-2 form .log {
+    text-align: center;
+    font-size: 28px;
+    color: rgb(158, 55, 55);
+  }
+  .contenedor-partes-2 form .inpuut label {
+    font-size: 22px;
+  }
+  .contenedor-partes-2 form .inpuut i {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  .contenedor-partes-2 form .inpuut input[type="text"],
+  input[type="password"] {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 899px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  .contenedor-total {
+  }
+  .contendor-total-1 {
+    width: 60%;
+    height: 90%;
+    max-width: 60%;
+    max-height: 90%;
+    /* background-color: black; */
+    overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+  }
+  .contendor-total-2 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+  }
+  .contenedor-partes-1 {
+    width: 100%;
+    height: 20vh;
+    max-width: 100%;
+    max-height: 20vh;
+  }
+  .contenedor-partes-2 {
+    width: 100%;
+    height: 80vh;
+    max-width: 100%;
+    max-height: 80vh;
+    background-color: rgb(236, 230, 230);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+  }
+  .contenedor-partes-2 form .inpuut {
+    padding-bottom: 30px;
+  }
+  .contenedor-partes-2 form .log {
+    text-align: center;
+    font-size: 23px;
+    color: rgb(158, 55, 55);
+  }
+  .contenedor-partes-2 form .inpuut label {
+    font-size: 20px;
+  }
+  .contenedor-partes-2 form .inpuut i {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  .contenedor-partes-2 form .inpuut input[type="text"],
+  input[type="password"] {
+    font-size: 16px;
+  }
+  .contenedor-partes-2 form .texts {
+    padding-bottom: 15px;
+  }
+  .contenedor-partes-2 form .btn {
+    padding-top: 25px;
+  }
+  .contenedor-partes-2 form .btn button {
+    padding: 15px 40px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .contendor-total-1 {
+    width: 60%;
+    height: 90%;
+    max-width: 60%;
+    max-height: 90%;
+    /* background-color: black; */
+    overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+  }
+  .contendor-total-2 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Agrega la propiedad overflow para evitar que el contenido se desborde */
+  }
+  .contenedor-partes-1 {
+    width: 100%;
+    height: 20vh;
+    max-width: 100%;
+    max-height: 20vh;
+  }
+  .contenedor-partes-2 {
+    width: 100%;
+    height: 80vh;
+    max-width: 100%;
+    max-height: 80vh;
+  }
+  .contenedor-partes-2 form .inpuut {
+    padding-bottom: 30px;
+  }
+  .contenedor-partes-2 form .log {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(158, 55, 55);
+  }
+  .contenedor-partes-2 form .inpuut label {
+    font-size: 20px;
+  }
+  .contenedor-partes-2 form .inpuut i {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  .contenedor-partes-2 form .inpuut input[type="text"],
+  input[type="password"] {
+    font-size: 16px;
+  }
+  .contenedor-partes-2 form .texts {
+    padding-bottom: 15px;
+  }
+  .contenedor-partes-2 form .btn {
+    padding-top: 25px;
+  }
+  .contenedor-partes-2 form .btn button {
+    padding: 15px 40px;
+    font-size: 20px;
+  }
+}
