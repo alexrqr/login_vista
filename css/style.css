@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url("../img/body.jpg");
+  background-image: url("../img/fondo_log.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
